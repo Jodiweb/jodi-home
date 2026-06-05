@@ -114,9 +114,15 @@ a {
 
 .brand-logo {
   display: block;
-  width: 132px;
   height: auto;
-  border-radius: 8px;
+}
+
+.header-logo {
+  width: 132px;
+}
+
+.footer-logo {
+  width: 150px;
 }
 
 .main-nav {
@@ -1561,8 +1567,12 @@ h3 {
     padding: 14px;
   }
 
-  .brand-logo {
+  .header-logo {
     width: 112px;
+  }
+
+  .footer-logo {
+    width: 140px;
   }
 
   .industrial-strip-grid {

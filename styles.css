@@ -1645,7 +1645,7 @@ h3 {
   }
 
   .hero-equipment-image {
-    width: min(112%, 540px);
+    width: 100%;
     max-height: 390px;
     margin: 0 24px;
   }

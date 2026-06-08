@@ -352,7 +352,17 @@ h3 {
 }
 
 .hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 540px;
+}
+
+.hero-equipment-image {
+  display: block;
+  width: min(100%, 620px);
+  height: auto;
+  filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.34));
 }
 
 .machine-card {
@@ -1614,7 +1624,11 @@ h3 {
   }
 
   .hero-visual {
-    min-height: 420px;
+    min-height: 360px;
+  }
+
+  .hero-equipment-image {
+    width: min(100%, 460px);
   }
 
   .machine-card {

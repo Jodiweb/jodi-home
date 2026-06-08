@@ -360,8 +360,8 @@ h3 {
 
 .hero-equipment-image {
   display: block;
-  width: min(100%, 700px);
-  max-height: 520px;
+  width: min(112%, 820px);
+  max-height: 600px;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.34));
@@ -1630,8 +1630,8 @@ h3 {
   }
 
   .hero-equipment-image {
-    width: min(100%, 460px);
-    max-height: 340px;
+    width: min(112%, 540px);
+    max-height: 390px;
   }
 
   .machine-card {

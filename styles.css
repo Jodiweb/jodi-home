@@ -374,8 +374,8 @@ h3 {
   position: relative;
   z-index: 1;
   display: block;
-  width: min(116%, 940px);
-  max-height: 640px;
+  width: min(120%, 1100px);
+  max-height: 720px;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 42px 58px rgba(0, 0, 0, 0.46)) drop-shadow(0 0 32px rgba(0, 63, 115, 0.28));

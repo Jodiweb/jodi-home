@@ -59,38 +59,7 @@ a {
   margin: 0 auto;
 }
 
-.industrial-strip {
-  color: rgba(255, 255, 255, 0.78);
-  background: var(--blue-950);
-  font-size: 0.78rem;
-  font-weight: 750;
-  letter-spacing: 0.04em;
-}
 
-.industrial-strip-grid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  min-height: 38px;
-}
-
-.industrial-strip span {
-  position: relative;
-  white-space: nowrap;
-}
-
-.industrial-strip span:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -12px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--orange);
-  transform: translateY(-50%);
-}
 
 .site-header {
   position: sticky;
@@ -1600,12 +1569,6 @@ h3 {
 
   .footer-logo {
     width: 140px;
-  }
-
-  .industrial-strip-grid {
-    justify-content: flex-start;
-    overflow-x: auto;
-    min-height: 34px;
   }
 
   .header-cta {

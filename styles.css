@@ -1788,6 +1788,10 @@ h3 {
 }
 
 @media (max-width: 720px) {
+  .header-cta {
+    display: none;
+  }
+
   .hamburger {
     display: flex;
   }

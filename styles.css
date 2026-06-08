@@ -100,7 +100,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 28px;
-  padding: 10px max(24px, calc((100vw - var(--container)) / 2));
+  padding: 6px max(24px, calc((100vw - var(--container)) / 2));
   border-bottom: 1px solid rgba(217, 225, 232, 0.95);
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(18px);
@@ -1591,7 +1591,7 @@ h3 {
 
   .site-header {
     gap: 14px;
-    padding: 8px;
+    padding: 4px 8px;
   }
 
   .header-logo {

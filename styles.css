@@ -93,9 +93,7 @@ a {
 }
 
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,7 +101,6 @@ a {
   padding: 4px max(24px, calc((100vw - var(--container)) / 2));
   border-bottom: 1px solid rgba(217, 225, 232, 0.95);
   background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(18px);
 }
 
 .brand {
@@ -118,7 +115,7 @@ a {
 }
 
 .header-logo {
-  width: 132px;
+  width: 96px;
 }
 
 .footer-logo {
@@ -1595,7 +1592,7 @@ h3 {
   }
 
   .header-logo {
-    width: 112px;
+    width: 80px;
   }
 
   .footer-logo {

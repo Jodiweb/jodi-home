@@ -374,8 +374,8 @@ h3 {
   position: relative;
   z-index: 1;
   display: block;
-  width: min(112%, 820px);
-  max-height: 600px;
+  width: min(116%, 940px);
+  max-height: 640px;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 42px 58px rgba(0, 0, 0, 0.46)) drop-shadow(0 0 32px rgba(0, 63, 115, 0.28));
@@ -1646,6 +1646,7 @@ h3 {
   .hero-equipment-image {
     width: min(112%, 540px);
     max-height: 390px;
+    margin: 0 24px;
   }
 
   .machine-card {

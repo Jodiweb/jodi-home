@@ -603,7 +603,6 @@ h3 {
 
 .impact-grid p,
 .pain-list p,
-.benefits-grid p,
 .application-card p,
 .article-grid p,
 .steps-line p {
@@ -622,7 +621,6 @@ h3 {
 }
 
 .pain-section,
-.benefits-section,
 .applications-section,
 .diagnostic-section,
 .final-cta {
@@ -679,6 +677,36 @@ h3 {
   margin-top: 14px;
   color: var(--blue-700);
   font-weight: 850;
+}
+
+.technology-bullets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.technology-bullets li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--blue-900);
+  font-size: 0.98rem;
+  font-weight: 760;
+  line-height: 1.35;
+}
+
+.technology-bullets li::before {
+  content: "";
+  position: absolute;
+  top: 0.55em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.16);
 }
 
 .technology-visual {
@@ -952,38 +980,6 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-}
-
-.benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 18px;
-}
-
-.benefits-grid article {
-  min-height: 230px;
-  padding: 28px;
-  border: 1px solid var(--gray-200);
-  border-radius: 16px;
-  background: var(--gradient-light);
-}
-
-.benefits-grid article:nth-child(1),
-.benefits-grid article:nth-child(2) {
-  grid-column: span 3;
-}
-
-.benefits-grid article:nth-child(n+3) {
-  grid-column: span 2;
-}
-
-.benefits-grid span {
-  display: inline-block;
-  margin-bottom: 28px;
-  color: var(--blue-700);
-  font-size: 0.82rem;
-  font-weight: 900;
-  letter-spacing: 0.16em;
 }
 
 .about-section {
@@ -1462,14 +1458,6 @@ h3 {
     border-bottom: 1px solid var(--gray-200);
   }
 
-  .benefits-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .benefits-grid article:nth-child(n) {
-    grid-column: span 1;
-  }
-
   .proof-board {
     grid-template-columns: 1fr 1fr;
   }
@@ -1517,7 +1505,6 @@ h3 {
   .hero,
   .page-hero,
   .pain-section,
-  .benefits-section,
   .applications-section,
   .diagnostic-section,
   .impact-section,
@@ -1591,7 +1578,6 @@ h3 {
 
   .impact-grid,
   .pain-list,
-  .benefits-grid,
   .application-grid,
   .application-detail-grid,
   .technical-grid,
@@ -1607,6 +1593,10 @@ h3 {
   .control-grid {
     gap: 28px;
     padding: 26px;
+  }
+
+  .technology-bullets {
+    grid-template-columns: 1fr;
   }
 
   .control-list div {

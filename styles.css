@@ -681,58 +681,20 @@ h3 {
   font-weight: 850;
 }
 
-.process-diagram {
-  display: grid;
-  grid-template-columns: 1fr 38px 1.2fr 38px 1.2fr 38px 1fr;
-  align-items: stretch;
-  padding: 28px;
+.technology-visual {
+  margin: 0;
+  padding: 18px;
   border: 1px solid var(--gray-200);
-  border-radius: 22px;
+  border-radius: 24px;
   background: var(--gradient-light);
   box-shadow: var(--shadow);
 }
 
-.process-step {
-  display: grid;
-  min-height: 210px;
-  place-items: center;
-  padding: 22px;
-  color: var(--blue-950);
-  border: 1px solid rgba(19, 90, 163, 0.16);
-  border-radius: 14px;
-  background: var(--white);
-  font-weight: 850;
-  text-align: center;
-}
-
-.process-step.microwave {
-  color: var(--white);
-  background: var(--blue-950);
-}
-
-.process-step.air {
-  border-color: rgba(242, 140, 40, 0.3);
-  background: #fff4e8;
-}
-
-.process-step.dry {
-  background: linear-gradient(145deg, var(--blue-100), var(--white));
-}
-
-.process-arrow {
-  position: relative;
-}
-
-.process-arrow::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  width: 18px;
-  height: 18px;
-  border-top: 3px solid var(--blue-700);
-  border-right: 3px solid var(--blue-700);
-  transform: translateY(-50%) rotate(45deg);
+.technology-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
 }
 
 .control-grid {
@@ -1498,25 +1460,6 @@ h3 {
 
   .impact-grid article:nth-child(-n+2) {
     border-bottom: 1px solid var(--gray-200);
-  }
-
-  .process-diagram {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .process-step {
-    min-height: 130px;
-  }
-
-  .process-arrow {
-    height: 24px;
-  }
-
-  .process-arrow::before {
-    left: 50%;
-    top: 2px;
-    transform: translateX(-50%) rotate(135deg);
   }
 
   .benefits-grid {

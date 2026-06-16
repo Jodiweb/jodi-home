@@ -43,6 +43,7 @@
 
     <main id="inicio">
       <section class="hero section-blue">
+        <canvas class="hero-wave-canvas" aria-hidden="true"></canvas>
         <div class="hero-grid container">
           <div class="hero-copy">
             <h1 class="hero-title">Secagem industrial por micro-ondas para processos mais rápidos, controlados e eficientes.</h1>
@@ -59,7 +60,7 @@
 
       <section class="impact-section container" aria-labelledby="impact-title">
         <div class="section-heading compact centered">
-          <h2 id="impact-title">Impacto operacional:</h2>
+          <h2 id="impact-title">Transforme a secagem em vantagem operacional:</h2>
         </div>
         <div class="impact-grid">
           <article>
@@ -143,7 +144,6 @@
             <li>Favorece operação contínua</li>
             <li>Aumenta previsibilidade produtiva</li>
           </ul>
-          <a class="text-link" href="tecnologia.html">Entenda como funciona a tecnologia</a>
         </div>
         <figure class="technology-visual">
           <img src="assets/images/tecnologia_secador_micro_ondas_jodi.png" alt="Secador industrial por micro-ondas JODI com tecnologia de convecção controlada">
@@ -151,19 +151,19 @@
       </section>
 
       <section id="empresa" class="about-section container" aria-labelledby="about-title">
-        <div class="photo-panel factory-panel" aria-label="Imagem institucional da empresa e equipamentos">
-          <div class="photo-label">Engenharia, fabricação e validação</div>
-        </div>
         <div class="about-copy">
-          <p class="eyebrow">Sobre a JODI</p>
+          <p class="eyebrow">JODI ENG</p>
           <h2 id="about-title">Engenharia brasileira especializada em secagem industrial por micro-ondas</h2>
           <p>A JODI Tecnologias desenvolve, fabrica e integra sistemas industriais de secagem por micro-ondas e soluções híbridas com ar quente para empresas que buscam mais eficiência, controle e produtividade em seus processos.</p>
           <p>Com sede em Panambi/RS e filial em Campinas/SP, a JODI atua desde a análise técnica do produto até a engenharia, automação, fabricação, instalação e validação da solução.</p>
-          <div class="authority-strip">
-            <div><strong>Desde 2009</strong><span>Experiência em engenharia aplicada à secagem industrial.</span></div>
-            <div><strong>Projetos sob medida</strong><span>Soluções desenvolvidas conforme produto, volume e objetivo do processo.</span></div>
-            <div><strong>Entrega completa</strong><span>Diagnóstico, engenharia, fabricação, instalação e pós-venda técnico.</span></div>
-          </div>
+        </div>
+        <div class="about-logo-panel" aria-label="Engenharia industrial JODI">
+          <img src="assets/images/project_engenharia_jodi.png" alt="Projeto de engenharia industrial JODI">
+        </div>
+        <div class="authority-strip">
+          <div><strong>Desde 2009</strong><span>Experiência em engenharia aplicada à secagem industrial.</span></div>
+          <div><strong>Projetos sob medida</strong><span>Soluções desenvolvidas conforme produto, volume e objetivo do processo.</span></div>
+          <div><strong>Entrega completa</strong><span>Diagnóstico, engenharia, fabricação, instalação e pós-venda técnico.</span></div>
         </div>
       </section>
 
@@ -176,69 +176,87 @@
           </div>
           <div class="application-grid">
             <article class="application-card petfood">
-              <div class="application-image"></div>
+              <div class="application-image"><img src="assets/images/card-pet-food-secagem-industrial-jodi.png" alt="Aplicação de secagem industrial para Pet Food"></div>
               <h3>Pet Food</h3>
               <p>Secagem de snacks, ossos, carnes, ingredientes e produtos de alto valor agregado.</p>
-              <a href="aplicacoes.html#pet-food">Ver aplicação</a>
             </article>
             <article class="application-card food">
-              <div class="application-image"></div>
+              <div class="application-image"><img src="assets/images/card-alimentos-ingredientes-secagem-jodi.png" alt="Aplicação de secagem para alimentos e ingredientes"></div>
               <h3>Alimentos e Ingredientes</h3>
-              <p>Soluções para produtos que exigem controle de umidade, textura e qualidade.</p>
-              <a href="aplicacoes.html#alimentos">Ver aplicação</a>
-            </article>
-            <article class="application-card biomass">
-              <div class="application-image"></div>
-              <h3>Biomassa e Agroindústria</h3>
-              <p>Aplicações para matérias-primas agrícolas, farelos, ervas, sementes e biomassa.</p>
-              <a href="aplicacoes.html#biomassa">Ver aplicação</a>
+              <p>Soluções para produtos que exigem controle de umidade, textura, cor, aroma e qualidade final.</p>
             </article>
             <article class="application-card materials">
-              <div class="application-image"></div>
+              <div class="application-image"><img src="assets/images/card-materiais-especiais-secagem-micro-ondas-jodi.png" alt="Aplicação de secagem para materiais especiais"></div>
               <h3>Materiais Especiais</h3>
-              <p>Projetos sob medida para produtos técnicos, sensíveis ou de alta complexidade.</p>
-              <a href="aplicacoes.html#materiais">Ver aplicação</a>
+              <p>Projetos sob medida para produtos técnicos, sensíveis ou de alta complexidade industrial.</p>
+            </article>
+            <article class="application-card testing">
+              <div class="application-image"><img src="assets/images/card-testes-novas-aplicacoes.png" alt="Testes e novas aplicações de secagem industrial"></div>
+              <h3>Múltiplas Aplicações</h3>
+              <p>A tecnologia JODI pode ser aplicada a inúmeros produtos, desde matérias-primas industriais até materiais sensíveis e de alto valor.</p>
             </article>
           </div>
-          <p class="application-note">Diversos produtos podem ser avaliados pela tecnologia JODI. Cada produto tem uma curva de secagem própria e pode ser analisado tecnicamente pela equipe da JODI.</p>
         </div>
       </section>
 
-      <section class="proof-section container" aria-labelledby="proof-title">
-        <div class="section-heading centered">
-          <p class="eyebrow">Provas e validação</p>
-          <h2 id="proof-title">Resultados construídos com teste, engenharia e validação.</h2>
-          <p>Cada produto possui uma curva de secagem própria. Por isso, a JODI valida tecnicamente a aplicação antes de propor uma solução industrial.</p>
+      <section class="lab-section section-light" aria-labelledby="lab-title">
+        <div class="container lab-hero-grid">
+          <div class="lab-copy">
+            <p class="eyebrow">JODI LAB</p>
+            <h2 id="lab-title">Testes em laboratório para validar sua aplicação industrial</h2>
+            <p>Antes de propor uma solução, a JODI realiza testes em laboratório com produtos reais para entender o comportamento do material, validar parâmetros de secagem e gerar dados técnicos para a engenharia.</p>
+          </div>
+          <div class="lab-visual" aria-label="Laboratório industrial de testes JODI">
+            <button class="click-carousel" type="button" aria-label="Alternar imagens do laboratório de testes" data-carousel='[
+              {"src":"assets/images/testes_jodi_snack_pet.png","alt":"Teste de secagem JODI com snack pet em validação técnica","label":"Laboratório de testes"},
+              {"src":"assets/images/testes_jodi_2.png","alt":"Validação técnica de secagem no laboratório JODI","label":"Teste controlado"},
+              {"src":"assets/images/testes_jodi_3.png","alt":"Amostra em análise durante validação JODI","label":"Amostra real"}
+            ]'>
+              <img src="assets/images/testes_jodi_snack_pet.png" alt="Teste de secagem JODI com snack pet em validação técnica">
+              <span>Laboratório de testes</span>
+              <small>Clique para ver mais</small>
+            </button>
+          </div>
         </div>
-        <div class="proof-board">
-          <div class="test-image panel-card">
-            <span>Fotos de testes</span>
+
+        <div class="container lab-sample-proof panel-card">
+          <header class="lab-sample-copy">
+            <p class="eyebrow">Comparativo da amostra</p>
+            <h3>Antes e depois da validação de secagem</h3>
+            <p>Análise visual e técnica do produto para entender comportamento, integridade e qualidade final após o teste controlado.</p>
+          </header>
+          <div class="lab-sample-images">
+            <figure>
+              <img src="assets/images/antes_amostra_jodi.png" alt="Amostra antes do processo de secagem JODI">
+              <figcaption>Antes</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/depois_amostra_jodi.png" alt="Amostra depois do processo de secagem JODI">
+              <figcaption>Depois</figcaption>
+            </figure>
           </div>
-          <div class="curve-card panel-card" aria-label="Curva de secagem representativa">
-            <svg viewBox="0 0 360 190" role="img" aria-label="Curva de secagem reduzindo umidade ao longo do tempo">
-              <path d="M30 150 H330" class="axis"></path>
-              <path d="M42 170 V28" class="axis"></path>
-              <path d="M45 42 C98 72 120 122 165 132 C205 141 255 142 320 149" class="curve"></path>
-              <circle cx="45" cy="42" r="5"></circle>
-              <circle cx="320" cy="149" r="5"></circle>
-            </svg>
-            <strong>Curvas de secagem</strong>
+        </div>
+
+        <div class="container lab-process-block">
+          <div class="section-heading compact">
+            <p class="eyebrow">Passo a passo do teste</p>
+            <h2>Da amostra à solução industrial</h2>
+            <p>Veja como a JODI valida sua aplicação antes de avançar para o projeto.</p>
           </div>
-          <div class="before-after panel-card">
-            <div><span>Antes</span></div>
-            <div><span>Depois</span></div>
+          <div class="lab-steps">
+            <article><span>01</span><h3>Diagnóstico da aplicação</h3><p>Entendemos o produto, o processo atual e os objetivos industriais para definir o melhor caminho de avaliação.</p></article>
+            <article><span>02</span><h3>Preparação da amostra</h3><p>Recebemos e preparamos o material para os ensaios em laboratório, considerando suas características e condições reais de processo.</p></article>
+            <article><span>03</span><h3>Ensaio controlado</h3><p>Testamos a amostra com micro-ondas, ar quente ou sistema híbrido, monitorando parâmetros como tempo, temperatura, umidade e comportamento do produto.</p></article>
+            <article><span>04</span><h3>Encaminhamento para engenharia</h3><p>Com os dados do laboratório, a equipe de engenharia avalia a viabilidade técnica, o potencial de escala e a configuração mais adequada para a solução industrial.</p></article>
           </div>
-          <div class="result-number panel-card">
-            <strong>70%</strong>
-            <span>dados de redução de tempo e controle de umidade final</span>
-            <small>Cases anonimizados e resultados dependem da aplicação, parâmetros e objetivo técnico.</small>
+        </div>
+
+        <div class="container lab-cta">
+          <div>
+            <h2>Tem um produto para testar?</h2>
+            <p>Envie sua amostra e descubra o potencial da tecnologia JODI para o seu processo.</p>
           </div>
-          <div class="proof-elements panel-card">
-            <span>Vídeos dos equipamentos</span>
-            <span>Antes e depois do produto</span>
-            <span>Controle de umidade final</span>
-            <span>Cases anonimizados</span>
-          </div>
+          <a class="btn btn-light" href="diagnostico-tecnico.html">Solicitar teste do meu produto</a>
         </div>
       </section>
 
@@ -328,6 +346,153 @@
         </nav>
       </div>
     </footer>
-<script>document.querySelector('.hamburger')?.addEventListener('click',function(){this.classList.toggle('active');document.querySelector('.main-nav')?.classList.toggle('open');this.setAttribute('aria-expanded',this.classList.contains('active'));});</script>
+<script>
+document.querySelector('.hamburger')?.addEventListener('click', function () {
+  this.classList.toggle('active');
+  document.querySelector('.main-nav')?.classList.toggle('open');
+  this.setAttribute('aria-expanded', this.classList.contains('active'));
+});
+
+(function () {
+  var canvas = document.querySelector('.hero-wave-canvas');
+  var hero = document.querySelector('.hero');
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!canvas || !hero || reducedMotion.matches) return;
+
+  var ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  var width = 0;
+  var height = 0;
+  var dpr = 1;
+  var frame = null;
+  var start = performance.now();
+  var colors = [
+    { r: 88, g: 183, b: 223 },
+    { r: 22, g: 108, b: 180 },
+    { r: 234, g: 247, b: 255 }
+  ];
+
+  function rgba(color, alpha) {
+    return 'rgba(' + color.r + ', ' + color.g + ', ' + color.b + ', ' + alpha + ')';
+  }
+
+  function resizeCanvas() {
+    dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    width = hero.offsetWidth;
+    height = hero.offsetHeight;
+    canvas.width = Math.floor(width * dpr);
+    canvas.height = Math.floor(height * dpr);
+    canvas.style.width = width + 'px';
+    canvas.style.height = height + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function drawWave(y, amplitude, wavelength, phase, color, alpha, lineWidth) {
+    var gradient = ctx.createLinearGradient(0, 0, width, 0);
+    gradient.addColorStop(0, rgba(color, alpha * 0.12));
+    gradient.addColorStop(0.38, rgba(color, alpha * 0.34));
+    gradient.addColorStop(0.68, rgba(color, alpha));
+    gradient.addColorStop(1, rgba(color, alpha * 0.58));
+
+    ctx.beginPath();
+    for (var x = -80; x <= width + 80; x += 8) {
+      var carrier = Math.sin((x / wavelength) + phase) * amplitude;
+      var modulation = Math.sin((x / (wavelength * 3.2)) + phase * 0.35) * amplitude * 0.22;
+      var waveY = y + carrier + modulation;
+      if (x === -80) ctx.moveTo(x, waveY);
+      else ctx.lineTo(x, waveY);
+    }
+
+    ctx.strokeStyle = gradient;
+    ctx.lineWidth = lineWidth;
+    ctx.globalAlpha = 1;
+    ctx.shadowColor = rgba(color, alpha * 0.8);
+    ctx.shadowBlur = 10;
+    ctx.stroke();
+    ctx.shadowBlur = 0;
+  }
+
+  function drawEnergyField(time, mobile) {
+    var centerY = height * (mobile ? 0.5 : 0.47);
+    var gradient = ctx.createRadialGradient(width * 0.76, centerY, 20, width * 0.76, centerY, width * 0.52);
+    gradient.addColorStop(0, 'rgba(88, 183, 223, 0.13)');
+    gradient.addColorStop(0.45, 'rgba(22, 108, 180, 0.07)');
+    gradient.addColorStop(1, 'rgba(22, 108, 180, 0)');
+
+    ctx.fillStyle = gradient;
+    ctx.globalAlpha = 0.82 + Math.sin(time * 1.2) * 0.08;
+    ctx.fillRect(0, 0, width, height);
+  }
+
+  function render(now) {
+    if (document.hidden) {
+      frame = requestAnimationFrame(render);
+      return;
+    }
+
+    var time = (now - start) * 0.00022;
+    var mobile = width < 760;
+    var count = mobile ? 8 : 12;
+    var startY = height * (mobile ? 0.22 : 0.16);
+    var spacing = height * (mobile ? 0.075 : 0.062);
+
+    ctx.clearRect(0, 0, width, height);
+    drawEnergyField(time, mobile);
+
+    for (var i = 0; i < count; i += 1) {
+      drawWave(
+        startY + spacing * i,
+        (mobile ? 8 : 12) + i * 1.1,
+        (mobile ? 38 : 48) + i * 4,
+        time * (1.7 + i * 0.08) + i * 0.8,
+        colors[i % colors.length],
+        0.052 + (i % 3) * 0.022,
+        i % 2 === 0 ? 0.9 : 1.25
+      );
+    }
+
+    frame = requestAnimationFrame(render);
+  }
+
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas, { passive: true });
+  frame = requestAnimationFrame(render);
+
+  if (reducedMotion.addEventListener) {
+    reducedMotion.addEventListener('change', function (event) {
+      if (event.matches && frame) cancelAnimationFrame(frame);
+    });
+  }
+})();
+
+document.querySelectorAll('[data-carousel]').forEach(function (carousel) {
+  var slides = JSON.parse(carousel.dataset.carousel || '[]');
+  var image = carousel.querySelector('img');
+  var label = carousel.querySelector('span');
+  var current = 0;
+
+  function showNextSlide() {
+    if (!slides.length || !image || !label) return;
+    current = (current + 1) % slides.length;
+    image.src = slides[current].src;
+    image.alt = slides[current].alt;
+    label.textContent = slides[current].label;
+    carousel.classList.add('is-changing');
+    setTimeout(function () {
+      carousel.classList.remove('is-changing');
+    }, 360);
+  }
+
+  carousel.addEventListener('click', function () {
+    showNextSlide();
+  });
+
+  if (slides.length > 1) {
+    setInterval(showNextSlide, 4200);
+  }
+});
+
+</script>
   </body>
 </html>

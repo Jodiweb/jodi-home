@@ -235,12 +235,16 @@
           </div>
           <div class="lab-visual" aria-label="Laboratório industrial de testes JODI">
             <button class="click-carousel" type="button" aria-label="Alternar imagens do laboratório de testes" data-carousel='[
-              {"src":"assets/images/testes_jodi_snack_pet.png","alt":"Teste de secagem JODI com snack pet em validação técnica","label":"Laboratório de testes"},
+              {"src":"assets/images/testes_jodi_1.png","alt":"Teste de secagem no laboratório JODI em validação técnica","label":"Laboratório de testes"},
               {"src":"assets/images/testes_jodi_2.png","alt":"Validação técnica de secagem no laboratório JODI","label":"Teste controlado"},
-              {"src":"assets/images/testes_jodi_3.png","alt":"Amostra em análise durante validação JODI","label":"Amostra real"}
+              {"src":"assets/images/testes_jodi_3.png","alt":"Amostra em análise durante validação JODI","label":"Amostra real"},
+              {"src":"assets/images/testes_jodi_4.png","alt":"Ensaio de secagem industrial em laboratório JODI","label":"Ensaio técnico"},
+              {"src":"assets/images/testes_jodi_5.png","alt":"Produto em teste durante validação de secagem JODI","label":"Validação de produto"},
+              {"src":"assets/images/testes_jodi_6.png","alt":"Amostra industrial preparada para teste de secagem JODI","label":"Preparação da amostra"},
+              {"src":"assets/images/testes_jodi_7.png","alt":"Análise de amostra no laboratório de testes JODI","label":"Análise da amostra"},
+              {"src":"assets/images/testes_jodi_8.png","alt":"Resultado de teste de secagem em laboratório JODI","label":"Resultado do teste"}
             ]'>
-              <img src="assets/images/testes_jodi_snack_pet.png" alt="Teste de secagem JODI com snack pet em validação técnica">
-              <span>Laboratório de testes</span>
+              <img src="assets/images/testes_jodi_1.png" alt="Teste de secagem no laboratório JODI em validação técnica">
               <small>Clique para ver mais</small>
             </button>
           </div>
@@ -500,11 +504,11 @@ document.querySelectorAll('[data-carousel]').forEach(function (carousel) {
   var current = 0;
 
   function showNextSlide() {
-    if (!slides.length || !image || !label) return;
+    if (!slides.length || !image) return;
     current = (current + 1) % slides.length;
     image.src = slides[current].src;
     image.alt = slides[current].alt;
-    label.textContent = slides[current].label;
+    if (label) label.textContent = slides[current].label;
     carousel.classList.add('is-changing');
     setTimeout(function () {
       carousel.classList.remove('is-changing');

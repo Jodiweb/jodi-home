@@ -1308,6 +1308,143 @@ h3 {
   white-space: nowrap;
 }
 
+.contact-hero-panel {
+  display: grid;
+  gap: 16px;
+  justify-self: end;
+  width: min(100%, 420px);
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
+  box-shadow: 0 30px 80px rgba(0,0,0,0.22);
+}
+
+.contact-hero-panel span {
+  color: rgba(255,255,255,0.74);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-hero-panel strong {
+  color: var(--white);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.18;
+}
+
+.contact-hero-panel p {
+  margin: 0;
+  color: rgba(255,255,255,0.76);
+  line-height: 1.58;
+}
+
+.contact-hero-panel .btn {
+  justify-self: start;
+}
+
+.contact-hero-centered {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.contact-hero-centered h1,
+.contact-hero-centered .page-hero-subtitle {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-section {
+  padding-top: 82px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(380px, 0.65fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.contact-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.contact-card-grid article {
+  padding: 24px;
+  border: 1px solid rgba(19, 90, 163, 0.12);
+  border-radius: 16px;
+  background: var(--white);
+  box-shadow: 0 18px 45px rgba(7, 26, 51, 0.08);
+}
+
+.contact-card-grid span {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--blue-700);
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-card-grid strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--blue-900);
+  line-height: 1.25;
+}
+
+.contact-card-grid p {
+  margin: 0;
+  color: var(--gray-700);
+}
+
+.contact-card-grid a {
+  color: var(--blue-700);
+  font-weight: 850;
+}
+
+.contact-form-card {
+  max-width: 560px;
+  margin: 34px auto 0;
+  border-color: var(--gray-200);
+  box-shadow: var(--shadow);
+}
+
+.leadlovers-form {
+  gap: 16px;
+}
+
+.leadlovers-form .form-ll {
+  width: 100%;
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  padding: 14px 15px;
+  color: var(--gray-900);
+  font: inherit;
+  font-size: 0.96rem;
+  background: #f8fbfd;
+}
+
+.leadlovers-form .form-ll:focus {
+  outline: 3px solid rgba(22, 108, 180, 0.2);
+  border-color: var(--blue-700);
+  background: var(--white);
+}
+
+.leadlovers-form button {
+  width: 100%;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
 .company-method-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2530,6 +2667,7 @@ h3 {
   .application-mosaic,
   .editorial-panel,
   .institutional-panel,
+  .contact-hero-panel,
   .diagnostic-summary {
     justify-self: stretch;
     width: 100%;
@@ -2552,6 +2690,24 @@ h3 {
 
   .company-method-grid article {
     padding: 22px;
+  }
+
+  .contact-layout,
+  .contact-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    padding-top: 42px;
+  }
+
+  .contact-form-card {
+    position: static;
+  }
+
+  .contact-hero-panel .btn {
+    width: 100%;
+    justify-self: stretch;
   }
 
   .company-facts-section .tech-intro-heading h2 {

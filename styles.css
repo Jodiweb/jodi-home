@@ -1241,6 +1241,102 @@ h3 {
   letter-spacing: -0.06em;
 }
 
+.company-quick-facts {
+  align-content: start;
+  gap: 12px;
+}
+
+.company-quick-facts div {
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.08);
+}
+
+.company-quick-facts strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+.company-quick-facts span {
+  display: block;
+  padding: 0;
+  color: rgba(255,255,255,0.76);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.company-about-section .split {
+  grid-template-columns: 0.84fr 1.16fr;
+  align-items: start;
+}
+
+.company-hero-image img {
+  object-fit: contain;
+}
+
+.company-image-panel {
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--gray-200);
+  border-radius: 24px;
+  background: linear-gradient(145deg, #ffffff, #f4f9fc);
+  box-shadow: 0 22px 54px rgba(7, 26, 51, 0.08);
+}
+
+.company-image-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  object-fit: contain;
+}
+
+.company-method-section .section-heading {
+  max-width: 920px;
+}
+
+.company-facts-section .tech-intro-heading h2 {
+  white-space: nowrap;
+}
+
+.company-method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 38px;
+}
+
+.company-method-grid article {
+  padding: 28px;
+  border: 1px solid rgba(19, 90, 163, 0.12);
+  border-radius: 18px;
+  background: var(--white);
+  box-shadow: 0 18px 45px rgba(7, 26, 51, 0.08);
+}
+
+.company-method-grid span {
+  display: inline-flex;
+  margin-bottom: 28px;
+  color: var(--blue-700);
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.company-method-grid p {
+  color: var(--gray-700);
+}
+
 .technical-grid,
 .application-detail-grid,
 .article-list,
@@ -2437,6 +2533,29 @@ h3 {
   .diagnostic-summary {
     justify-self: stretch;
     width: 100%;
+  }
+
+  .company-about-section .split,
+  .company-method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .company-image-panel {
+    position: static;
+    order: 2;
+    padding: 10px;
+  }
+
+  .company-about-section .section-heading {
+    order: 1;
+  }
+
+  .company-method-grid article {
+    padding: 22px;
+  }
+
+  .company-facts-section .tech-intro-heading h2 {
+    white-space: normal;
   }
 
   .tech-intro-section {

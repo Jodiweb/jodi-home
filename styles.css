@@ -897,6 +897,14 @@ a {
   padding-bottom: 86px;
 }
 
+@supports (content-visibility: auto) {
+  .projects-page-hero ~ .project-showcase-section,
+  .projects-page-hero ~ .final-cta {
+    content-visibility: auto;
+    contain-intrinsic-size: 860px;
+  }
+}
+
 .project-showcase-copy {
   max-width: 900px;
   margin-bottom: 30px;

@@ -200,6 +200,13 @@ a {
   pointer-events: none;
 }
 
+@supports (content-visibility: auto) {
+  .hero ~ section {
+    content-visibility: auto;
+    contain-intrinsic-size: 760px;
+  }
+}
+
 .page-hero {
   position: relative;
   overflow: hidden;
@@ -3698,6 +3705,10 @@ h3 {
     width: 100%;
     max-height: 390px;
     margin: 0 24px;
+  }
+
+  .hero-wave-canvas {
+    display: none;
   }
 
   .machine-card {

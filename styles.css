@@ -439,6 +439,62 @@ a {
   min-height: 210px;
 }
 
+.magnetron-section {
+  background: linear-gradient(180deg, #f8fbfd 0%, #ffffff 100%);
+}
+
+.magnetron-image-panel {
+  position: relative;
+  justify-self: center;
+  width: min(100%, 420px);
+  margin: 0;
+  padding: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(19, 90, 163, 0.12);
+  border-radius: 24px;
+  background: var(--white);
+  box-shadow: 0 22px 54px rgba(7, 26, 51, 0.09);
+}
+
+.magnetron-image-panel::before {
+  content: "";
+  position: absolute;
+  inset: -30% -20% 42% 30%;
+  background: radial-gradient(circle, rgba(22, 108, 180, 0.16), transparent 64%);
+  pointer-events: none;
+}
+
+.magnetron-image-panel img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+.magnetron-copy {
+  max-width: 620px;
+}
+
+.magnetron-copy p {
+  color: var(--gray-700);
+  font-size: 1.06rem;
+  line-height: 1.62;
+}
+
+.magnetron-copy strong {
+  color: var(--blue-900);
+  font-weight: 900;
+}
+
+.magnetron-note {
+  margin-top: 18px;
+  padding: 18px 20px;
+  border-left: 4px solid var(--blue-700);
+  border-radius: 0 14px 14px 0;
+  background: rgba(22, 108, 180, 0.08);
+}
+
 .hot-air-vs-microwave-section {
   position: relative;
   overflow: hidden;

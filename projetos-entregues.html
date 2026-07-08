@@ -9,14 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="image" href="assets/images/produtos_jodi_industria.png" fetchpriority="high">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400..900&display=swap"></noscript>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CCKT8JLL4V"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-CCKT8JLL4V');
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-CCKT8JLL4V';
+          document.head.appendChild(script);
+          gtag('js', new Date());
+          gtag('config', 'G-CCKT8JLL4V');
+        }, 1200);
+      });
     </script>
     <link rel="stylesheet" href="styles.css">
   </head>

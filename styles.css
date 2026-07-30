@@ -3772,6 +3772,25 @@ h3 {
     padding-bottom: 24px;
   }
 
+  .tech-function-section {
+    padding-top: 46px;
+  }
+
+  .tech-function-section .tech-benefits-grid {
+    grid-template-columns: 1fr;
+    max-width: none;
+    gap: 14px;
+  }
+
+  .tech-function-section .tech-benefits-grid article {
+    min-height: 0;
+    padding: 22px;
+  }
+
+  .tech-function-section .tech-benefits-grid h3 {
+    max-width: none;
+  }
+
   .about-section .about-copy,
   .about-section .about-logo-panel,
   .about-section .authority-strip {

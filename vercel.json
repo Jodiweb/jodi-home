@@ -1,0 +1,28 @@
+{
+  "redirects": [
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/Home", "destination": "/", "permanent": true },
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/contato", "destination": "/contato.html", "permanent": true },
+    { "source": "/Contato", "destination": "/contato.html", "permanent": true },
+    { "source": "/empresa", "destination": "/empresa.html", "permanent": true },
+    { "source": "/Empresa", "destination": "/empresa.html", "permanent": true },
+    { "source": "/a-empresa", "destination": "/empresa.html", "permanent": true },
+    { "source": "/A-empresa", "destination": "/empresa.html", "permanent": true },
+    { "source": "/servicos", "destination": "/aplicacoes.html", "permanent": true },
+    { "source": "/Servicos", "destination": "/aplicacoes.html", "permanent": true },
+    { "source": "/serviços", "destination": "/aplicacoes.html", "permanent": true },
+    { "source": "/aplicacoes", "destination": "/aplicacoes.html", "permanent": true },
+    { "source": "/Aplicacoes", "destination": "/aplicacoes.html", "permanent": true },
+    { "source": "/tecnologia", "destination": "/tecnologia.html", "permanent": true },
+    { "source": "/Tecnologia", "destination": "/tecnologia.html", "permanent": true },
+    { "source": "/videos", "destination": "/conteudos.html", "permanent": true },
+    { "source": "/Videos", "destination": "/conteudos.html", "permanent": true },
+    { "source": "/imagens", "destination": "/projetos-entregues.html", "permanent": true },
+    { "source": "/Imagens", "destination": "/projetos-entregues.html", "permanent": true },
+    { "source": "/conteudos", "destination": "/conteudos.html", "permanent": true },
+    { "source": "/Conteudos", "destination": "/conteudos.html", "permanent": true },
+    { "source": "/projetos-entregues", "destination": "/projetos-entregues.html", "permanent": true },
+    { "source": "/diagnostico-tecnico", "destination": "/diagnostico-tecnico.html", "permanent": true }
+  ]
+}

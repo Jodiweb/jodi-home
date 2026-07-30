@@ -12,6 +12,7 @@
     { "source": "/servicos", "destination": "/aplicacoes.html", "permanent": true },
     { "source": "/Servicos", "destination": "/aplicacoes.html", "permanent": true },
     { "source": "/serviços", "destination": "/aplicacoes.html", "permanent": true },
+    { "source": "/servi%C3%A7os", "destination": "/aplicacoes.html", "permanent": true },
     { "source": "/aplicacoes", "destination": "/aplicacoes.html", "permanent": true },
     { "source": "/Aplicacoes", "destination": "/aplicacoes.html", "permanent": true },
     { "source": "/tecnologia", "destination": "/tecnologia.html", "permanent": true },

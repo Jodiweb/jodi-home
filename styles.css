@@ -2256,9 +2256,9 @@ h3 {
 }
 
 .embedded-contact-form {
-  height: 574px;
+  height: 720px;
   padding: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .company-method-grid {

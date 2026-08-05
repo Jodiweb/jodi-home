@@ -2257,7 +2257,11 @@ h3 {
 
 .embedded-contact-form {
   height: 720px;
+  max-width: 640px;
   padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
   overflow: visible;
 }
 

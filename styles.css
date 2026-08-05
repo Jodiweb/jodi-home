@@ -2258,11 +2258,18 @@ h3 {
 .embedded-contact-form {
   height: 720px;
   max-width: 640px;
+  border-radius: 0;
   padding: 0;
   border: 0;
   background: transparent;
   box-shadow: none;
   overflow: visible;
+}
+
+.embedded-contact-form iframe {
+  display: block;
+  border-radius: 0 !important;
+  background: transparent;
 }
 
 .company-method-grid {

@@ -1,0 +1,13 @@
+{
+  "name": "jodi-home",
+  "version": "1.0.0",
+  "description": "JODI Tecnologias website with Vercel Speed Insights",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static HTML site - no build needed'",
+    "test": "echo 'No tests configured'"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.0"
+  }
+}

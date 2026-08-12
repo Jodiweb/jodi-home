@@ -3282,7 +3282,8 @@ h3 {
 
 .footer-social-links a {
   display: inline-flex;
-  width: max-content;
+  width: 132px;
+  min-height: 44px;
   gap: 7px;
   align-items: center;
   margin: 0;

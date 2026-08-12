@@ -3267,6 +3267,22 @@ h3 {
   overflow-wrap: anywhere;
 }
 
+.footer-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.footer-social-links a {
+  display: inline-flex;
+  margin: 0;
+  color: rgba(255,255,255,0.9);
+  font-weight: 800;
+}
+
 .footer-addresses {
   display: grid;
   align-content: start;

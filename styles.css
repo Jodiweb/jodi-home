@@ -2197,6 +2197,11 @@ h3 {
 
 .contact-section {
   padding-top: 82px;
+  padding-bottom: 24px;
+}
+
+.contact-channels-section {
+  padding-top: 32px;
 }
 
 .contact-layout {
@@ -2288,7 +2293,7 @@ h3 {
 }
 
 .embedded-contact-form {
-  height: 720px;
+  height: 640px;
   max-width: 640px;
   border-radius: 0;
   padding: 0;

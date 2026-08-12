@@ -2450,19 +2450,6 @@ h3 {
   line-height: 1.7;
 }
 
-.location-map-link {
-  display: inline-flex;
-  margin-top: auto;
-  padding-bottom: 4px;
-  border-bottom: 2px solid var(--orange);
-  color: var(--blue-900);
-  font-weight: 900;
-}
-
-.location-map-link:hover {
-  color: var(--blue-700);
-}
-
 .diagnostic-page-section {
   padding: 92px 0;
 }

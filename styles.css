@@ -3278,17 +3278,36 @@ h3 {
 .footer-social-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 18px;
-  margin-top: 16px;
+  gap: 10px;
+}
+
+.footer-social-title {
+  margin: 18px 0 10px;
   padding-top: 14px;
   border-top: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.72);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .footer-social-links a {
   display: inline-flex;
+  gap: 7px;
+  align-items: center;
   margin: 0;
+  padding: 7px 10px;
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 8px;
   color: rgba(255,255,255,0.9);
-  font-weight: 800;
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.footer-social-links svg {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
 }
 
 .footer-addresses {

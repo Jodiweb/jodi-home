@@ -2457,6 +2457,14 @@ h3 {
   margin-left: auto;
 }
 
+.company-locations-section .section-heading {
+  max-width: none;
+}
+
+.company-locations-section .section-heading h2 {
+  white-space: nowrap;
+}
+
 .company-locations-section .location-grid article {
   display: flex;
   min-height: 280px;
@@ -3543,6 +3551,10 @@ h3 {
 @media (max-width: 720px) {
   .container {
     width: min(100% - 28px, var(--container));
+  }
+
+  .company-locations-section .section-heading h2 {
+    white-space: normal;
   }
 
   .site-header {

@@ -3253,8 +3253,7 @@ h3 {
 }
 
 .footer-brand p {
-  max-width: 360px;
-  margin-top: 18px;
+  display: none;
 }
 
 .site-footer h3 {

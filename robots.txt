@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /conteudos-blog-dev.html
 
 Sitemap: https://www.joditecnologias.com.br/sitemap.xml

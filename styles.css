@@ -2141,6 +2141,79 @@ h3 {
   max-width: 920px;
 }
 
+.company-leadership-section {
+  padding-top: 24px;
+}
+
+.company-leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.leadership-card {
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  border-radius: 18px;
+  background: var(--white);
+  box-shadow: 0 18px 45px rgba(7, 26, 51, 0.08);
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+
+.leadership-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 54px rgba(7, 26, 51, 0.12);
+}
+
+.leadership-photo {
+  margin: 0;
+  overflow: hidden;
+  background: var(--gray-100);
+  aspect-ratio: 4 / 3;
+}
+
+.leadership-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+.leadership-photo-nardon img {
+  object-position: center 12%;
+  transform: scale(1.1);
+}
+
+.leadership-card-content {
+  padding: 24px;
+}
+
+.leadership-card-content h3 {
+  margin-bottom: 7px;
+  color: var(--blue-900);
+  font-size: 1.4rem;
+}
+
+.leadership-card-content p {
+  margin: 0;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.leadership-card-content > p:not(.leadership-role) + p {
+  margin-top: 14px;
+}
+
+.leadership-card-content .leadership-role {
+  margin-bottom: 16px;
+  color: var(--blue-700);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .company-facts-section .tech-intro-heading h2 {
   white-space: nowrap;
 }
@@ -3564,6 +3637,19 @@ h3 {
 
   .company-locations-section .section-heading h2 {
     white-space: normal;
+  }
+
+  .company-leadership-section {
+    padding-top: 16px;
+  }
+
+  .company-leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .leadership-card-content {
+    padding: 22px;
   }
 
   .site-header {

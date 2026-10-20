@@ -34,6 +34,8 @@
       return response.json();
     })
     .then(function (geo) {
+      window.JODI_GEO = window.JODI_GEO || {};
+      window.JODI_GEO.localizacao = geo;
       window.clearTimeout(timeout);
       loadForm(geo);
     })

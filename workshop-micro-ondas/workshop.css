@@ -349,6 +349,22 @@ h1 em {
   color: var(--blue);
   font-weight: 700;
 }
+.workshop-expert--pending {
+  grid-column: 1 / -1;
+  align-items: center;
+  background: var(--paper);
+}
+.workshop-expert--pending svg {
+  width: 56px;
+  height: 56px;
+  padding: 14px;
+  color: var(--navy);
+  background: var(--sky);
+  border-radius: 10px;
+}
+.workshop-expert--pending p {
+  margin-top: 4px;
+}
 .agenda-registration {
   display: grid;
   justify-items: center;

@@ -526,15 +526,9 @@ body:has(.registration-dialog[open]) {
   background: #0d6937;
   box-shadow: none;
 }
-.thanks-pending,
 .thanks-date {
   margin-top: 12px;
   font-size: 13px;
-}
-.thanks-pending {
-  color: var(--muted);
-}
-.thanks-date {
   color: var(--navy);
   font-weight: 700;
 }

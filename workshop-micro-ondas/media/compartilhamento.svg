@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#003f73"/>
+  <image href="/assets/images/logo_jodi_branca.svg" x="35" y="0" width="200" height="150"/>
+  <path d="M60 135h1080M60 558h1080" stroke="#dde7ef" stroke-opacity=".3"/>
+  <rect x="62" y="186" width="7" height="7" fill="#ff7a00"/>
+  <g font-family="'Exo 2', Arial, sans-serif">
+    <text x="87" y="197" fill="#dde7ef" font-size="17" letter-spacing="3">WORKSHOP JODI</text>
+    <text x="60" y="294" fill="#ffffff" font-size="65" font-weight="700">Micro-ondas</text>
+    <text x="60" y="370" fill="#dde7ef" font-size="65" font-weight="700">na Prática.</text>
+    <text x="63" y="432" fill="#dde7ef" font-size="25">Um novo olhar para a secagem industrial.</text>
+    <text x="63" y="507" fill="#ffffff" font-size="17">Demonstração prática · Especialistas JODI · Perguntas e respostas</text>
+    <text x="63" y="595" fill="#dde7ef" font-size="14" letter-spacing="2">ENGENHARIA E TECNOLOGIA APLICADA À EFICIÊNCIA INDUSTRIAL</text>
+  </g>
+  <path d="M1065 191h65v65M1065 515h65v-65" stroke="#166cb4" fill="none"/>
+</svg>

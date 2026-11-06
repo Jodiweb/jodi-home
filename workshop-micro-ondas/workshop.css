@@ -353,9 +353,12 @@ h1 em {
   text-align: center;
 }
 .agenda-registration .cta {
-  max-width: 500px;
-  min-height: 64px;
-  font-size: clamp(18px, 3vw, 22px);
+  width: 85%;
+  max-width: 425px;
+  min-height: 55px;
+  padding: 12px 10px;
+  font-size: clamp(15.3px, 2.55vw, 18.7px);
+  letter-spacing: 0.15px;
 }
 .agenda-registration p {
   font-size: 13px;
@@ -719,6 +722,10 @@ body:has(.registration-dialog[open]) {
   }
   .cta {
     padding: 16px 14px;
+  }
+  .agenda-registration .cta {
+    padding-inline: 6px;
+    font-size: 14px;
   }
   h1 {
     font-size: 30px;

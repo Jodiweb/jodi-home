@@ -642,8 +642,28 @@ body:has(.registration-dialog[open]) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
   }
+  .workshop-experts {
+    max-width: 1080px;
+  }
+  .workshop-experts > h3 {
+    font-size: 32px;
+  }
   .workshop-experts-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .workshop-expert {
+    gap: 20px;
+    padding: 24px;
+  }
+  .workshop-expert img {
+    width: 116px;
+  }
+  .workshop-expert h4 {
+    font-size: 22px;
+  }
+  .workshop-expert p {
+    font-size: 16px;
   }
   .footer {
     padding: 24px 0;

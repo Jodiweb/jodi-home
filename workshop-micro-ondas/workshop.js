@@ -26,35 +26,8 @@
   });
   document.querySelector("[data-year]").textContent = new Date().getFullYear();
 
-  // Reutiliza o GA4 oficial. Se já houver um gtag no documento, não o inicializa novamente.
-  const ownsAnalytics = typeof window.gtag !== "function";
-  if (ownsAnalytics) {
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () {
-      window.dataLayer.push(arguments);
-    };
-    window.gtag("js", new Date());
-    window.gtag("config", measurementId);
-    const loadAnalytics = () =>
-      window.setTimeout(() => {
-        // A prévia local mantém a fila testável sem enviar visitas ao GA4 de produção.
-        if (["localhost", "127.0.0.1", "[::1]"].includes(window.location.hostname))
-          return;
-        if (
-          document.querySelector('script[src*="googletagmanager.com/gtag/js"]')
-        )
-          return;
-        const script = document.createElement("script");
-        script.async = true;
-        script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-        document.head.append(script);
-      }, 1200);
-    if (document.readyState === "complete") loadAnalytics();
-    else window.addEventListener("load", loadAnalytics, { once: true });
-  }
-
   function track(name, parameters = {}) {
-    window.gtag("event", name, { send_to: measurementId, ...parameters });
+    window.gtag?.("event", name, { send_to: measurementId, ...parameters });
   }
   track("view_workshop_page");
 

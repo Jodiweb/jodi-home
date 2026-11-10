@@ -7,42 +7,7 @@
     <title>Obrigado pela inscrição | Workshop JODI</title>
     <link rel="icon" type="image/png" href="/assets/images/Jodi_fivecon.png" />
     <link rel="stylesheet" href="/workshop-micro-ondas/workshop.css" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CCKT8JLL4V"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        window.dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-CCKT8JLL4V");
-      gtag("config", "AW-640674131");
-
-      window.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
-      const tagManager = document.createElement("script");
-      tagManager.async = true;
-      tagManager.src = "https://www.googletagmanager.com/gtm.js?id=GTM-T4DKLGB8";
-      document.head.append(tagManager);
-
-      (function (window, document) {
-        if (window.fbq) return;
-        const pixel = function () {
-          if (pixel.callMethod) pixel.callMethod.apply(pixel, arguments);
-          else pixel.queue.push(arguments);
-        };
-        window.fbq = pixel;
-        window._fbq = window._fbq || pixel;
-        pixel.push = pixel;
-        pixel.loaded = true;
-        pixel.version = "2.0";
-        pixel.queue = [];
-        const script = document.createElement("script");
-        script.async = true;
-        script.src = "https://connect.facebook.net/en_US/fbevents.js";
-        document.head.append(script);
-      })(window, document);
-      window.fbq("init", "1364581961221667");
-      window.fbq("track", "PageView");
-    </script>
+    <script src="/workshop-micro-ondas/tracking.js" defer></script>
   </head>
   <body class="workshop-thanks">
     <noscript>

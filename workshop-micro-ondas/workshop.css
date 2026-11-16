@@ -746,7 +746,37 @@ body:has(.registration-dialog[open]) {
     display: none;
   }
   .hero {
-    padding-top: 76px;
+    padding-top: 60px;
+  }
+  .hero h1 {
+    font-size: clamp(30px, 7.4vw, 44px);
+    margin: 0 0 8px;
+  }
+  .hero-lead {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+  .hero-purchase {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+  }
+  .hero-purchase .event-summary,
+  .hero-cta-note {
+    order: 1;
+  }
+  .hero-purchase .event-summary {
+    margin: 8px 0 0;
+  }
+  .hero-event {
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  .hero-purchase .cta {
+    padding-block: 12px;
+  }
+  .hero-cta-note {
+    margin-top: 6px;
   }
 }
 @media (max-width: 359px) {

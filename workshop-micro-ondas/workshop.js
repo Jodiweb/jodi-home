@@ -53,25 +53,16 @@
     if (form.firstElementChild) return;
     registrationDialog.querySelector(".registration-direct").href = registration.href;
     const iframe = registrationFrame.cloneNode();
-    iframe.src = registration.href;
+    iframe.addEventListener("load", () => { registrationDialog.querySelector(".registration-status").hidden = true; track("workshop_form_loaded"); }); iframe.src = registration.href;
     form.append(iframe);
-  }
-
-  let embedRequested = false;
-  function openRegistration() {
-    registrationDialog.showModal();
-    prepareRegistration();
-    if (embedRequested) return;
-    embedRequested = true;
     const embedScript = document.createElement("script");
     embedScript.src = "https://link.msgsndr.com/js/form_embed.js";
     document.body.append(embedScript);
   }
 
   if (canEmbedRegistration) {
-    // Antecipa o carregamento do formulário sem atrasar o conteúdo da página.
-    if (document.readyState === "complete") prepareRegistration();
-    else window.addEventListener("load", prepareRegistration, { once: true });
+    // Dá à landing uma oportunidade de renderizar antes de buscar o formulário.
+    if ("requestIdleCallback" in window) { window.requestIdleCallback(prepareRegistration, { timeout: 3000 }); } else { window.setTimeout(prepareRegistration, 1500); }
 
     if (!("closedBy" in registrationDialog)) {
       registrationDialog.addEventListener("click", (event) => {
@@ -102,7 +93,8 @@
         !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey
       ) {
         event.preventDefault();
-        openRegistration();
+        prepareRegistration();
+        registrationDialog.showModal();
       }
     });
     // Inclui abertura por botão central sem duplicar o clique normal.

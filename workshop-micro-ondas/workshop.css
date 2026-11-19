@@ -813,3 +813,4 @@ body:has(.registration-dialog[open]) {
   width: 100%;
   max-width: 425px;
 }
+.registration-summary { margin: 8px 0 10px; color: var(--muted); font-size: 14px; line-height: 1.5; }

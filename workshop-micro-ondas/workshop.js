@@ -106,6 +106,19 @@
         });
     });
   });
+  const materialsGrid = document.querySelector(".materials-grid");
+  if (materialsGrid && "IntersectionObserver" in window &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.08 });
+    materialsGrid.dataset.reveal = "";
+    materialsGrid.querySelectorAll(".material-card").forEach((card) => observer.observe(card));
+  }
   let legalCount = 0;
   document.querySelectorAll("[data-legal]").forEach((link) => {
     const url = validUrl(config[`${link.dataset.legal}Url`], true);

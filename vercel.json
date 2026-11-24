@@ -1,6 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
+    { "source": "/links", "destination": "/links.html" },
     { "source": "/workshop", "destination": "/workshop-micro-ondas/index.html" },
     { "source": "/workshop_obrigado", "destination": "/workshop-micro-ondas/obrigado.html" }
   ],
